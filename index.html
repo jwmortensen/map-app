@@ -59,7 +59,7 @@ L.mapbox.accessToken = 'pk.eyJ1Ijoiandtb3J0ZW5zZW4iLCJhIjoiQjJHSVp4NCJ9.AYH98hv0
 var map = L.mapbox.map('map').setView([29.785, -95.39], 10);
 var layers = document.getElementById('menu-ui');
 
-addLayer(L.mapbox.tileLayer('jwmortensen.m3e3fne4'), 'Base Map', 1);
+addLayer(L.mapbox.tileLayer('mapbox.outdoors'), 'Base Map', 1);
 addLayer(L.mapbox.tileLayer('jwmortensen.z2iq9f6r'), 'Probabilities', 2);
 
 function addLayer(layer, name, zIndex) {
