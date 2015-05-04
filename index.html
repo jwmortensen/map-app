@@ -119,14 +119,13 @@ var map = L.mapbox.map('map').setView([29.785, -95.39], 10);
 var layers = document.getElementById('menu-ui');
 
 L.mapbox.tileLayer('mapbox.outdoors').setZIndex(1).addTo(map);
-addLayer(L.mapbox.tileLayer('jwmortensen.z2iq9f6r'), 'Probabilities', 2);
-addLayer(L.mapbox.tileLayer('jwmortensen.juelv7vi'), 'Probabilities2', 2, 'active');
+addLayer(L.mapbox.tileLayer('jwmortensen.z2iq9f6r'), 'Probabilities', 10);
+addLayer(L.mapbox.tileLayer('jwmortensen.juelv7vi'), 'Probabilities2', 10, 'active');
 
 function addLayer(layer, name, zIndex, active) {
+    layer.setZIndex(zIndex);
     if (active == 'active') {
-      layer
-          .setZIndex(zIndex)
-          .addTo(map);
+      layer.addTo(map);
     }
 
     // Create a simple layer switcher that
