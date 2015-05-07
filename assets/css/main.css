@@ -1,0 +1,51 @@
+body {
+  margin:0;
+  padding:0;
+  font-family:'Lato',sans-serif;
+  font-weight:300;
+  }
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  }
+.selectvars {
+  position: absolute;
+  top:10px;
+  right:10px;
+  z-index:1;
+  }
+.selectvars select {
+  border-radius:3px;
+  border:1px solid rbga(0,0,0,0.4);
+  }
+.legend-title {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 90%;
+  }
+.legend-scale ul {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  float: left;
+  list-style: none;
+  }
+.legend-scale ul li {
+  font-size: 80%;
+  list-style: none;
+  margin-left: 0;
+  line-height: 18px;
+  margin-bottom: 2px;
+  }
+ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 16px;
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 0;
+  border: 1px solid #999;
+  }
